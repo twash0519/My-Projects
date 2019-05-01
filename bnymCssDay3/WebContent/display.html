@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Display</title>
+			<style>
+				div {/* General div containers */
+					margin-top: 10px;
+					background-color:gray;
+					width:300px; height:300px;
+					
+					display:inline-block;	
+					
+				}
+				
+				div div {/* only div containers that are child to a div */
+				
+					background-color:aqua;
+					width:100px; height:100px;
+					display:inline-block;	
+					
+					
+				}
+				span {
+					color:white;
+				
+				}
+			</style>
+	
+	</head>
+	<body>
+			<div>
+				<div>
+					<span>
+						This is  inner div 1
+					</span>
+				</div>
+				<div>
+					<span>
+						This is  inner div 2
+					</span>
+				</div>
+			</div>
+			
+			<div>
+				<div>
+					<span>
+						This is  inner div 1
+					</span>
+				</div>
+				<div>
+					<span>
+						This is  inner div 2
+					</span>
+				</div>
+				<span>I'm here</span>
+	</body>
+	<footer></footer>
+</html>

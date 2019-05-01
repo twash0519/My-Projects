@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Form</title>
+		<style>
+			#main_container {
+				margin-top:10px;
+				background-color:greenyellow;
+				width:500px; 
+				height:500px;
+				margin-top: 1px;
+				margin-left: 250px;
+				padding: 50px;
+			}
+			
+			
+			#gray_container {
+				background-color:lightgray;
+				width:300px; 
+				height:300px;		
+				margin:100px;
+				float:center;
+				text-align:center;
+			}
+			
+			#form_container {  
+				background-color:;
+				width:200px; 
+				height:200px;
+				margin-top: 10px;
+				margin-left: 50px;
+				text-align:center;
+			
+			}	
+			
+			 #icon_container{
+			 width:50px;
+			 height:50px;
+			 background-color:gray;
+			 border-radius: 50%;
+			 display: inline-block;
+			 margin-top:-200px;
+  			 
+			 }
+			 
+			 .inputText{
+			 	margin:10px;
+			 	width:110px; 
+				height:30px;	
+				text-align:center;
+				background-color:lightblue;
+			 }
+			 
+			 #submitButton {
+			 	background:lightblue;
+			 
+			 }
+		</style>
+
+</head>
+<body>	
+	<header></header>
+	<!--  Content section -->
+	
+		<!-- Green container div--> 
+		<div id="main_container"> 
+		
+		 	<!-- icon box div--> 
+			
+				<!-- Gray Coontainer  div--> 
+				<div id="gray_container"> 
+					<div id="icon_container">
+						<img src="" />
+					</div>
+			
+					<!-- Form Coontainer  div--> 
+					<h2>User Login</h2>
+					<form id="form_container">
+						<input class="inputText" name="userName" type="text"  placeholder="Username"  />
+						<input class="inputText" name="password" type="password"  placeholder="Password"  />
+						<input class="inputText" id="submitButton" type="submit" value="LOGIN" name="buttonSubmit" />
+					</form>
+					<a href="#">Forgot password?</a>
+				</div>
+			</div>
+			
+	
+	<footer></footer>		
+</body>
+
+</html>

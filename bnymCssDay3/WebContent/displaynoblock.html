@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Display No Block</title>
+		<style>
+			div {/* General div containers */
+				margin-top: 10px;
+				background-color:green;
+				width:300px; height:300px;
+				display:inline-block;	
+			}
+			
+			div div {/* only div containers that are child to a div */
+			
+				background-color:aqua;
+				width:100px; height:100px;
+				display:block;	
+			}
+		</style>
+
+</head>
+<body>
+		<div>
+			<div>
+				This is  inner div 1
+			</div>
+			<div>
+				This is  inner div 2
+			</div>
+		</div>
+		
+		<div>
+			<div>
+				This is  inner div 1
+			</div>
+			<div>
+				This is  inner div 2
+			</div>
+</body>
+<footer></footer>
+</html>
