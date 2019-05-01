@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewpert" content="width=device-width, initial-scale=1">
+
+            <title>Home</title>
+            <link rel="stylesheet"
+                  type="text/css" 
+                  href="./styles/main.css" >
+                   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+                   <script type="text/javascript" src="./script/script.js"></script>
+                   <script type="text/javascript" src="./script/formjs.js"></script>
+              <style> 
+                body{
+                  background-image: url("./images/background.jpg");
+                  }
+             </style>     
+        </head>
+        <body>
+        <!-- Main Container-->
+            <!-- Main Navigation-->
+            <header>
+                    <nav>
+                        <div class="menu_container">
+                       
+                             <div class="menu_logo">
+                                <img src="./images/\zumba-logo-horizontal.gif" width=120 height=50>
+                            </div>
+                            <div class="menu_item">
+                                <ul>
+                                    <li>
+                                        <a href="#">Home</a>
+                                        <!--drop down items-->
+                                          <div id="menuHome" class="dropdown-content" > <!-- 
+                                                <a href="#" style="color:black;">Sales</a>
+                                                <a href="#" style="color:black;">Gifts</a>
+                                           --></div>
+                                            
+                                    </li>
+                                    <li>
+                                        <a href="./views/media.html">Media</a>
+                                        <!--drop down items-->
+                                            <div id="menuProducts" class="dropdown-content">
+                                                <!--
+                                                <a href="#" style="color:black;">Videos</a>
+                                                <a href="#" style="color:black;">Music</a>
+                                                <a href="#" style="color:black;">Live Class</a>   
+                                            --> 
+                                     </li>
+                                    <li>
+                                        <a href="#">Schedule</a>
+                                        <!--drop down items-->
+                                            <div id="menuSchedule" class="dropdown-content">
+                                                <!--
+                                                <a href="#" style="color:black;">Classes</a>
+                                                <a href="#" style="color:black;">Events</a>
+                                                 -->                              
+                                            </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">About</a>
+                                        <!--drop down items-->
+                                            <div id="menuAbout" class="dropdown-content">
+                                               
+                                               <!-- 
+                                                <a href="#" style="color:black;">Mission</a>
+                                                <a href="#" style="color:black;">My Story</a>
+                                                <a href="#" style="color:black;">Testimonials</a>
+                                               -->
+                                                
+                                            </div>
+                                    </li>
+                                    <li>
+                                        <a href="./views/contact.html">Contact</a>
+                                        
+                                         <div id="menuContact" class="dropdown-content">
+                                             <!--
+                                            <a href="#" style="color:black;">Email</a>
+                                            -->
+                                        </div>
+                                    </li>
+                                </ul>
+                                
+                            </div>
+                         </div>
+                </nav>
+                <!--End Main Navigation-->
+             </header>
+             
+            <aside class="main_wrapper">
+               <hr/> 
+               
+               <!--  Main Content  -->  
+
+                <!--Header-->
+                <h1>
+                    Zumba With Theresa<br>
+               </h1>
+               <div class="login">
+                   
+                    <table width="400" >
+                        <tr>
+                            <td class="login" >
+                                <form class="form" method="post" action="#" id="form">
+                                    <label for="userName">User Name</label>&nbsp;<input type="text" id="username" maxlength="8" placeholder="Username"  pattern="^[a-zA-Z0-9_.-]*$[a-zA-Z0-Z_.-]*$" required />            
+                                    <label for="password">Password</label>&nbsp; <input type="password" id="password" maxlength="8"  placeholder="Password" pattern="^[a-zA-Z0-9_.-]*$[a-zA-Z0-Z_.-]*$" required />
+                                     <input type="submit" value="Submit" />
+                                   
+                                </form>     
+                           </td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="feedback">
+        </div>
+               <!--Sub Header-->
+               <span id="subHeader">Home</span>
+               
+
+               <!-- Intro Text-->
+                <br><br>
+               <div id="introText"><strong>Join. &nbsp; Move.&nbsp;Inspire </strong>
+                
+                </div>
+                <div id="subIntroText">Come Zumba with Theresa</strong>
+                
+                </div>
+                <!-- End Intro Text-->
+
+                <div class="main_content_text"> <br/>
+                </div>
+                <!--Row one of main container-->
+                <!--Promortional Video-->
+                 <div id="frame">
+                 <iframe width="560" height="315" src="https://www.youtube.com/embed/uHl4KkOO8YM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                
+
+                 <!--End Promortional Video-->
+              
+               
+                 
+                 
+                <div class="main_container">
+
+                    
+                    <!--footer--> 
+             
+                    <footer style="clear:both;background-color: none;">
+                        <p class="homeFooter">
+                            <ul>
+                                <li class="homeFooter"><a href="#top">To the Top</a>&nbsp;</li>
+                                <li class="homeFooter">&copy; 2019&nbsp;</li>
+                                <li class="homeFooter">Zumba With Theresa &nbsp; </li>
+                                <li class="homeFooter">Last Updated: 02/20/2019</li>
+                            <br>
+                            
+                            </ul>
+                            <ul class="homeFooter">
+                            <li class="homeFooter"><a href="#">Support |</a></li>
+                            <li class="homeFooter"><a href="#">Terms |</a></li>
+                            <li class="homeFooter"><a href="#">Privacy |</a></li>
+                            <li class="homeFooter"><a href="#">About |</a></li>
+                            <li class="homeFooter"><a href="#">Contact</a></li>
+
+                        </ul>
+        
+                        </p>
+                    </footer>
+                
+                </div>
+   
+            </div>
+
+            
+        </body>
+        
+    </html>
