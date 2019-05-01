@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Forms</title>
+</head>
+<body>
+	<header>
+				<center>
+					<h1>Welcome to Day 2</h1>
+				</center>
+			
+			<! -- Include a nav to link to other pages-->
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="slide19tables.html">Tables Page</a></li>
+						<li><a href="#">Forms Page</a></li>
+						<li><a href="slide26forms.html">Forms Page 2</a></li>
+					</ul>
+				</nav>
+		</header>
+		<!--  Include the profile form here -->
+		<p><br>
+		<form>
+		<table>
+		<tr>
+			<td><label for="name">Full Name</label></td>
+			<td><input id="name" type="text" name ="fulName" required/><br /></td>
+		</tr>
+		<tr>
+			<td><label for="email">Email</label></td>
+			<td><input id="email" type="email" name ="email"  /><br /></td>
+		</tr>
+		<tr>
+			<td><label for="pass">Password</label></td>
+			<td><input id="pass" type="password" name ="password"  disabled/><br /></td>
+		</tr>
+		<tr>
+			<td><label for="conpass">Confirm Password</label></td>
+			<td><input id="conpass" type="password" name ="conPass" /><br /></td>
+		</tr>
+		<tr>
+			<td><label for="femlae" >Female</label><input id="female" type="radio" name ="gender"  /></td>
+		<td><label for="male" >Male</label><input id="male" type="radio" name ="gender"  /></td>
+		</tr>
+		<tr>
+			<td><label for="quant" >Quantity</label></td>
+			<td><input id="quant" type="number" name ="ocena" value=0" min="1" max="6" /><br /></td>
+		</tr>
+		<tr>
+			<td><label for="dob" >DOB</label></td>
+			<td><input id="date" type="date" min="2017-01-02" name="data"  /><br /></td>
+		</tr>	
+		<tr>
+			<td><label for="hour" >Hour</label></td>
+			<td><input id="hour" type="time" name="dontknow"  /><br /></td>
+		</tr>	
+		<tr>
+			<td><label for="c" >Favorite Color</label></td>
+			<td><input id="c" type="color" name="ulobinoly color" value="#ff00AA" /><br />
+			<input type="submit" name="sub" value ="Save" /></td>
+		</tr>
+			
+		</table>	
+		</form>
+		<footer>
+			
+		</footer>
+</body>
+</html>

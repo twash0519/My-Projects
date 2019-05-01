@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Forms</title>
+</head>
+<body>
+	<header>
+				<center>
+					<h1>Welcome to Day 2</h1>
+				</center>
+			
+			<! -- Include a nav to link to other pages-->
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="slide19tables.html">Tables Page</a></li>
+						<li><a href="slide25forms.html">Forms Page 1</a></li>
+						<li><a href="#">Forms Page 2</a></li>
+					</ul>
+				</nav>
+		</header>
+		<!--  Include the profile form here -->
+		<p><br>
+		<form>
+		<table>
+		
+			<label for="message">Tell me everything</label></br>
+			<textarea cols="50" rows="10"></textarea> <br />
+			
+			<label for="cars" >Cars</label>&nbsp;
+			<input list="cars" />
+			<datalist id="cars" />
+				<option value="BMW" />	
+				<option value="Ford" />
+				<option value="Volvo" />
+				<option value="Skoda" />
+				<option value="Toyota" />
+			</datalist></br>
+			
+			<label for="country" >Country</label>&nbsp;
+			<select name="country" id="country" multiple="multiple">
+				<optgroup label="Europe">
+					<option value="UK">UK</option>option>
+					<a href="about.html"><option value="Germany">Germany</option></a>
+					<option value="France">France</option>option>
+				</optgroup>
+				
+				<optgroup label="North America">
+					<option value="USA">USA</option>option>
+					<option value="Canada">Canada</option>option>
+				</optgroup>
+			</select> 
+			
+			
+			<input type="submit" name="sub" value ="Save" />
+			</table>
+		</form>
+		<footer>
+			
+		</footer>
+</body>
+</html>
