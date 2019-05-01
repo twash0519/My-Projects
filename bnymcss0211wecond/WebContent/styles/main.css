@@ -1,0 +1,197 @@
+@charset "ISO-8859-1";
+
+.animated-box {
+	
+	width:200px;
+	height: 200px;
+	background-color:aquamarine;
+	animation-name: flash;
+	animation-delay: 1s;
+	animation-iteration-count: 3;
+	animation-fill-mode:both;
+	animations-duration: 2s;
+	animation-direction:alternate;
+	
+}
+
+/*reference:slide 11 */
+@keyframes flash {
+	from {
+		opacity:1;
+		}
+	to {
+		opacity:0;
+		}
+	
+}
+
+.animated-box1{
+	
+	width:200px;
+	height: 200px;
+	background-color:aquamarine;
+	position: relative;
+	animation-name: identifier;
+	animation-delay: 1s;
+	animation-iteration-count: infinite;
+	animation-fill-mode:both;
+	animation-duration: 2s;
+	animation-direction:alternate;
+	
+}
+	
+
+
+/*reference:slide 13 */
+@keyframes identifier {
+	0% { top: 0; }
+	50% { top: 300px; left: 20px; } 
+	50% { top: 100px; }
+	100% { top: 0; }
+	
+}
+
+
+.animated-box2{
+	
+	width:200px;
+	height: 200px;
+	background-color:aquamarine;
+	position: relative;
+	-webkit-animation-name: flasher;
+	animation-name: flasher;
+	animation-delay: 1s;
+	animation-iteration-count: infinite;
+	animation-fill-mode:both;
+	animation-duration: 2s;
+	animation-direction:alternate;
+	
+}
+	
+
+
+/*reference:slide 15 */
+@-webkit-keyframes flasher {
+	from {
+		opacity:1;
+		}
+	to {
+		opacity:0;
+		}
+	
+}
+
+@keyframes flasher {
+	from {
+		opacity:1;
+		}
+	to {
+		opacity:0;
+		}
+	
+}
+
+
+.transform-circle{
+	
+	width:300px;
+	height: 300px;
+	background-color:aquamarine;
+	border-radius:50%;
+	text-align: center;
+	transform: translate(30px, 80px) rotate(30deg);
+	
+}
+
+@keyframes fadeInDown {
+	from {
+		opacity: 0;
+		-webkit-transform: translate3d(0, -100%, 0);
+		transform: translate3d(0, -100%, 0);
+		}
+	to {
+		opacity:1;
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+		
+		}
+	
+}
+
+
+
+.fadeInDown {
+-webkit-animation-name: fadeInDown;
+animation-name: fadeInDown;
+animation-duration: 2s;
+width:100px;
+height:100px;
+background-color:aqua;
+text-align: center;
+	
+	
+	}
+	
+	.hinge{
+-webkit-animation-duration:2s;
+animation-duration:2s;
+-webkit-animation-name:hinge;
+animation-name:hinge;
+width:100px;
+height:100px;
+position:relative;
+left:150px;
+background-color:pink;
+text-align:center; 
+} 
+@keyframes hinge{
+0%{
+-webkit-transform-origin:top left;
+transform-origin: top left;
+-webkit-animation-timing-function:ease-in-out;
+animation-timing-function:ease-in-out;
+}
+20%,
+60%{
+-webkit-transform:rotate3d(0,0,1,80deg);
+transform: rotate3d(0,0,1,80deg);
+-webkit-transform-origin:top left;
+transform-origin: top left;
+-webkit-animation-timing-function:ease-in-out;
+animation-timing-function:ease-in-out;
+}
+40%,
+80%{
+-webkit-transform:rotate3d(0,0,1,60deg);
+transform: rotate3d(0,0,1,60deg);
+-webkit-transform-origin:top left;
+transform-origin: top left;
+-webkit-animation-timing-function:ease-in-out;
+animation-timing-function:ease-in-out;
+opacity:1;
+}
+to{
+-webkit-transform:translate3d(0,700px,0);
+transform: translate3d(0,700px,0); /*this makes it drop */
+opacity:0;
+}
+} 
+
+.box {
+	background-color: rgba(200, 200, 200, .5);
+	width: 	95%;
+	margins: 0 auto;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+@media (min-width: 450px)and (max-width: 640px){
+	
+	div{
+		color:red
+	}
+}
+
+
+	
+

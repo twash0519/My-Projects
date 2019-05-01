@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Form Validation</title>
+<style>
+	#username {
+		bordere:none;
+		outline:none;
+		border-radius: 3px;
+		padding: 4px;
+		}
+	#username:not (:placeholder-shown) : invalid {
+		box-shadow: 1px 2px 10px red;
+	}
+	</style>
+</head>
+<body>
+	<form>
+		<label for="username" >Enter your name</label>
+		<input id="username" name="username"
+		type="email" placeholder="sample@domain.com"
+		required autofocus>
+		<button>Submit</button>
+	</form>
+</body>
+</html>

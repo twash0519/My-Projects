@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="bnymcss0211wecond">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <property name="context-root" value="bnymcss0211wecond"/>
+        <property name="java-output-path" value="/bnymcss0211wecond/build/classes"/>
+    </wb-module>
+</project-modules>
