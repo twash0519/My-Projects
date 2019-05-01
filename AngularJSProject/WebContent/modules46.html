@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="ISO-8859-1">
+        <title>AngularJS Controller Exercise</title>
+        <script src="js/angular.min.js"></script>
+        
+    </head>
+
+<!-- Simple HTML page -->
+
+
+  
+
+        <!--
+              <body ng-app> 
+            
+            Without Controller
+       <div ng-mousemove="count = count + 1" 
+       ng-init="count=0">Mouse over me!</div>
+
+        <h1>{{count}}</h1>
+
+        <div ng-mousemove="count2 = count2 + 1" 
+        ng-init="count2=0">Mouse over me!</div>
+        <h2>{{count2}}</h2>
+
+        -->
+
+       <!--
+
+         
+        <body ng-app ng-init="count=0"> 
+        
+        <h1 ng-mousemove="count = count + 1" >Mouse Over ME!</h1>
+
+        
+        <h2>{{count}}</h2>
+        -->
+
+ <!--
+         <div ng-mousemove="count = count + 1" 
+       ng-init="count=0">Mouse over me!</div>
+
+        <h1>{{count}}</h1>
+
+        <div ng-mousemove="count2 = count2 + 1" 
+        ng-init="count2=0">Mouse over me!</div>
+        <h2>{{count2}}</h2>
+      
+        -->
+       
+    </body>
+<body ng-app="myApp" ng-controller="myCtrl">
+
+
+<h1 ng-mousemove="count = count + 1">Mouse Over Me!</h1>
+
+<h2>{{ count }}</h2>
+
+
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+    $scope.count = 0;
+    $scope.inc = function() {
+        $scope.count++
+    }
+
+    });
+    
+
+</script>
+</html>

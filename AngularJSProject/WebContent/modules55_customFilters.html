@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="ISO-8859-1">
+        <title>Filters</title>
+        <script src="js/angular.min.js"></script>
+        
+    </head>
+    <body >
+        <h1>AngularJS Custom Filters</h1>
+
+    <div ng-app="DemoApp" ng-controller="DemoController">
+        
+        We are learning {{tutorial | Demofilter}}
+   </div>
+
+   
+
+    <script>
+    
+    var myApp = angular.module('DemoApp', []);
+
+    myApp.filter('Demofilter', function()  {
+         
+        return function(input){
+            return input + "framework!"
+        }
+    });
+    myApp.controller('DemoController', function($scope){
+         $scope.tutorial = "AngularJS";
+
+     });
+        </script>
+    
+    
+</body> 
+</html>

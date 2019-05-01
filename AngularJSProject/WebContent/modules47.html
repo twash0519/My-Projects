@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="ISO-8859-1">
+        <title>Filters</title>
+        <script src="js/angular.min.js"></script>
+        
+    </head>
+
+<!--
+    <div ng-app="myApp" ng-controller="nCtrl">
+        <h1>{{weight | number: 2}} pounds </h1>
+    </div>
+
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('nCtrl', function($scope) {
+    $scope.weight = 1000;
+    
+    
+    });
+    
+
+</script>
+-->
+
+
+<div ng-app="myApp" ng-controller="nCtrl">
+        <h1>{{weight | number}} pounds </h1>
+    </div>
+
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('nCtrl', function($scope) {
+    $scope.weight = 1000000;
+    
+    
+    });
+    
+
+</script>
+</html>

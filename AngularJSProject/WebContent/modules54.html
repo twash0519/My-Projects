@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="ISO-8859-1">
+        <title>Filters</title>
+        <script src="js/angular.min.js"></script>
+        
+    </head>
+    <body ng-app="myApp">
+
+
+    <div ng-controller="myController">
+        Enter first Name: <input type="text" ng-model="firstName"><br>
+        Enter last Name: <input type="text" ng-model="lastName"><br>
+        Enter fees: <input type="number" ng-model="fees"><br>
+        Enter subject: <input type="text" ng-model="subject"><br>
+
+     <!-- <p>
+          Name in Upper Case: {{firstName  | uppercase}}  {{lastName  | uppercase}}  
+      </p>-->
+          <p>
+          Name in Upper Case: {{firstName+' ' +lastName  | uppercase}}  
+           
+      </p>
+        
+       <p>
+           Name in Lower Case: {{firstName  | lowercase}} {{lastName  | lowercase}} 
+      </p>
+       <p>
+           Fees: {{fees  | currency }} 
+       </p>
+       <p>Subject:
+           <ul>
+            <li  ng-repeat="sub in (subjects | filter:{name:subject}) | orderBy:marks">
+
+           <!-- <li  ng-repeat="sub in (subjects:  | orderBy:SortOrder | filter:(subject)">-->
+
+                {{sub.name+', marks:'+sub.marks}}
+            </li> 
+           </ul>
+           
+      </p>
+        
+         
+     </div>
+
+   
+
+    <script>
+    
+    var myApp = angular.module('myApp', []);
+
+    myApp.controller('myController', function($scope)  {
+       
+
+        $scope.subjects =[{name: 'Math', marks:'65'},
+                        {name: 'Physics', marks:'70'},
+                        {name: 'Chemistry', marks:'80'}];                      
+       
+                        
+      
+                        
+    });
+     
+        </script>
+    
+    
+</body> 
+</html>

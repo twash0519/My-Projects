@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <title>AngularJS Controller</title>
+    <script src="js/angular.min.js"></script>
+</head>
+    <body ng-app="myNgApp">
+    <div ng-controller="myController" >
+        
+        <div ng-repeat ="s in students">
+            
+                First Name: {{s.firstName}}<br>
+                Last Name: {{s.lastName}}<br>
+                <hr>
+        </div>  
+    </div>       
+    
+    
+      <!--  <div ng-controller="myController" >
+            First Name: {{students.firstName}}<br>
+            Last Name: {{students.lastName}}<br>
+        </div>-->
+    </div>
+
+    
+    <script>
+        var ngApp = angular.module('myNgApp', []);
+/*
+            ngApp.controller('myController', function($scope) {
+             $scope.students = {firstName: 'Albert', lastName: 'Einstein'};
+             $scope.students = {firstName: 'Tammy', lastName: 'Book'};
+            });
+       
+       */     
+
+        ngApp.controller('myController', function($scope) {
+             $scope.students = [{firstName: 'Albert', lastName: 'Einstein'},
+                                {firstName: 'Tammy', lastName: 'Book'}];
+            });
+    </script>
+
+
+</body>
+</html>
+
+
+
+
+
