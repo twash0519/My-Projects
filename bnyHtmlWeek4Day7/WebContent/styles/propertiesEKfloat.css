@@ -1,0 +1,24 @@
+div{
+	text-align: center;
+	border: 2px dashed red;
+	width:800px;
+	height: 400px;
+}
+
+
+#div1{
+	/*background-color:aqua;*/
+	background: linear-gradient(to left top, blue, pink);
+	float:left;
+	
+}
+
+#div2{
+	background-color:antiquewhite;
+	float:right;
+	
+}
+#div3{
+	background-color:blueviolet;
+	clear:both;
+}
