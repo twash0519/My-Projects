@@ -1,0 +1,9 @@
+@import "original2.scss";
+
+$className: active;
+$attribute: background;
+
+p.#{$className} {
+    #{$attribute}-color:red;
+
+}

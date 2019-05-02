@@ -1,0 +1,21 @@
+.flex_container {
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background: red;
+
+            .flex_item {
+                width:100px;
+                height:100px;
+                text-align:center;
+                background: green;
+            }
+
+       
+        
+       @for $i from 1 through 3{
+            
+        .item-#{$i}{order:$i}
+       }
+}

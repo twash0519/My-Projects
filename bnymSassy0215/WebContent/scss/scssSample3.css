@@ -1,0 +1,21 @@
+.main_container {
+  margin: 0;
+  padding: 0;
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
+  background-image: url("r.png");
+  border: 12px solid;
+  border-color: red;
+}
+.main_container nav {
+  padding: 0;
+}
+.main_container nav ul {
+  display: flex;
+}
+.main_container nav ul:hover {
+  box-shadow: 1px 1px 10px red;
+}
+
+/*# sourceMappingURL=scssSample3.css.map */

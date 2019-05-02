@@ -1,0 +1,25 @@
+.main_container {
+        width: 300px;
+        height: 300px;
+        $color: null;
+       
+        
+        @if 4 < 7 {
+            background-color:red;
+            $color:red;
+        
+        }//this is dependent on the irst @if 
+        @else {
+            background-color:green;
+            $color: green;
+
+        }
+        //second @if
+        @if $color == red {
+            padding: 50px;
+        } //this is dependent on the second @gif
+        @else {
+            padding: 10px;
+        }
+      
+}

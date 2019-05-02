@@ -1,0 +1,21 @@
+.flex_container {
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background: red;
+
+            .flex_item {
+                width:100px;
+                height:100px;
+                text-align:center;
+                background: green;
+            }
+
+       @each $image in img1, img2, img3, img4 {
+                .#{image}_flex_item {
+                    background-image: url('/images/#{$images}.png');
+                }
+
+       }
+}

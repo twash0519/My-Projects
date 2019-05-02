@@ -1,0 +1,31 @@
+.main_container {
+        width: 300px;
+        height: 300px;
+        $color: null;
+       
+        
+        @if 4 == 0 {//zero
+            background-color:yellow;
+            $color:yellow;
+        
+        }
+        @else if 4 % 2 == 0 {//even
+            background-color:red;
+            $color: red;
+
+        }
+        @else { //odd
+            background-color:green;
+            $color: green;
+
+        }
+          @if $color==red { 
+            background-color:red;
+            padding: 20px;
+
+        }
+        @else {
+            padding: 0;
+        }
+      
+}
