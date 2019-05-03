@@ -1,0 +1,70 @@
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Executing a Function on Change Event in jQuery</title>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript">
+    var arrayVendors= [];
+        for(i=0;i<=10;i++){
+            arrayVendors[i] = "BNY Vendor" + i;
+        }
+
+       console.log(arrayVendors);
+       console.log(arrayVendors.length);
+
+        $(document).ready(function(){//document.ready is when the load of the page
+
+      /*  $("#selectVender").append("<option>Vendor1</option>");
+        $("#selectVender").append("<option>Vendor2</option>");
+        $("#selectVender").append("<option>Vendor3</option>");
+        $("#selectVender").append("<option>Vendor99</option>");
+        $("#selectVender").append("<option>Vendor110</option>");
+*/
+        
+
+
+        for(i=0;i<=10;i++){
+            var vVendorName = "bnyMellon" + i;
+            $("#selectVender ").append("<option>" + vVendorName + "</option>");
+                
+        }
+
+
+        
+
+
+        $("#selectVender").change(function(){ //change is often used for forms
+            var selectedOption = $(this).find(":selected").val();
+            alert("You have selected this vendor - " + selectedOption);
+        });
+    });
+    $(document).ready(function(){
+        $("#town").change(function(){ //change is often used for forms
+            var selectedOption = $(this).find(":selected").val();
+            alert("You have selected this town - " + selectedOption);
+        });
+    });
+   
+    </script>
+ <!-- arrayVendor - [vendor1, vendor2, vendor3, vendor99, vendor110];-->
+</head>
+<body>
+    <form>
+        <label>Vendor</label>
+        <select id="selectVender">
+            
+            
+        </select>
+         <label>Towns:</label>
+        <select id="town">
+            <option>Monroe</option>
+            <option>Princeton</option>
+            <option>New Brunswick</option>
+        </select>
+    </form>
+	<p><strong>Note:</strong> Select any value from the dropdown select and see the result.</p>
+</body>
+</html>        
+
