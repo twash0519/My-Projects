@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="ISO-8859-1">
+        <title>Simple Algorithm</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var userInput="";
+            var operand = "";
+            var nums = "";
+            const SEPERATOR = "|";
+            userInput = prompt("Enter an Arithmetic Expression:");
+            console.log(userInput);
+            for(let i=0; i<userInput.length; i++ ){
+                if(userInput[i] >= '0' && userInput[i] <='9'){
+                    nums += userInput[i] + SEPERATOR;
+
+                }else if (userInput[i] == "+" ||
+                          userInput[i] == "-" ||
+                          userInput[i] == "^" ){
+                            operand +=  userInput[i]+ SEPERATOR;
+                        }
+
+            }
+            
+
+            /*
+             for(let i=0; i<userInput.length; i++ ){
+                if(userInput[i] >= '0' && userInput[i] <='9'){
+                    while(i < userInput.length
+                    && userInput[i] >= '0'
+                    && userInput[i] <>>= '9'){
+                        nums += userInput[i];
+                        i++
+                    }
+                    nums += userInput[i] + SEPERATOR;
+                    i--;
+
+                }else if (userInput[i] == "+" ||
+                          userInput[i] == "-" ||
+                          userInput[i] == "^" ){
+                    operand +=  userInput[i]+ SEPERATOR;
+                }
+
+            }
+            */
+
+        console.log("number ", nums);
+        console.log("operands ", operand);
+
+        </script>
+       
+      
+       
+
+    </body>
+</html>
