@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>CSS Grid Set 3</title>
+		
+        
+        <style>
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+/*Menu*/
+.menu_container{
+    display: flex;
+    padding: 10px;
+    background-color: rgb(0, 0, 102);
+    font-family: cursive;
+  	color: white;
+}
+
+.menu_item{
+    flex: 1;
+    position: relative;
+  	display: inline-block;
+  
+}
+
+.more{
+    flex: 2;
+}
+
+.menu_container 
+.menu_item nav ul{
+   display: flex;
+}
+
+.menu_container 
+.menu_item nav ul li a{
+    color: white;
+    padding-left: 21px;
+    padding-right:21px;
+	border-radius: 2px;
+}
+
+.menu_container 
+.menu_item nav ul li a:hover{
+    background-color: #becccf;
+    color: #1c1808;
+}
+
+/*Title*/
+.title_container{
+    display: flex;
+    justify-content: flex-start;
+    align-content:space-around;
+    align-items: center;
+    padding: 10px;
+}
+.title_container h3{
+    padding-top: 10px;
+    flex: 7; 
+}
+
+.title_container h1{
+   flex: 1; 
+}
+/*Main content*/
+.main_content{
+    display: flex;
+ 	width: 90%;
+    justify-content: flex-start;
+    align-content:space-around;
+    align-items: center;
+    padding-top:10px;
+    padding-left: 100px;
+   
+}
+
+.main_content .sub_main{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.main_content .img{
+    background-color: #a5c5cc;
+    width: 100%;
+}
+
+.main_content .img img{
+    width: 100%;
+    height: 100px;
+}
+
+.main_content .main-items{
+    border: 1px solid black;
+    width: 360px;
+    height: 390px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.main_content .main-items:hover{
+    box-shadow: 0px 0px 20px #becccf;
+}
+
+.main_content .main-items 
+.img_content{
+    padding: 10px;
+ }
+ 
+.divContainer{
+width:80%;
+display:inline-block;
+
+}
+    
+ .flex_container {
+    	width:100%;
+		margin: 100px auto;
+    	display: flex;
+    	flex-wrap: wrap;
+    	justify-content: space-around;
+}
+
+.flex_item {
+				
+				background-color: ;
+				display: flex;
+				flex-wrap:wrap;	
+				}
+
+.flex_itemA {
+			background-color:#becccf;
+				
+			}
+			
+
+
+
+        </style>
+    </head>
+	
+	<body>
+	<header>
+	<!-- This is the menu content -->
+		<div class="menu_container">
+	            <div class="menu_item more">
+	                <p>CSS GRID</p>
+	            </div>
+	            <div class="menu_item">
+	                <nav>
+	                    <ul>
+	                        <li>
+	                        	<a href="../index.html">Home</a>
+							</li>
+	                         <li>
+	                            <a href="set1.html">Set1</a>
+	                        </li>
+	                        <li>
+	                            <a href="set2.html">Set2</a>
+	                        </li>
+	                        <li>
+	                            <a href="#">Set3</a>
+	                        </li>
+	                    </ul>
+	                </nav>
+	            </div>
+	        </div>
+	        <div class="title_container">
+	            <h1>Set 3</h1>
+	           <!-- <h3>Secondary Text</h3>-->
+	        </div>
+        </header>
+        <!-- This is the main content -->
+        <div class="main_content">
+        
+ 		
+	 			
+		 	<pre>
+		
+		 	</pre>
+		</div>
+			<!--  <div class="flex_container">
+
+		<div class="flex_item flex_itemA">
+				<span="sub_title">Grid Container</span>
+				To make an HTML element behave as a grid container, you have to set the display property to grid or inline-grid.
+
+Grid containers consist of grid items, placed inside columns and rows.
+
+			</div>
+			<div class="flex_item first-item">
+				Grid Items
+			</div>
+			-->
+			
+			<div class="divContainer">
+				<div style="display:inline-block, width:40%;">
+					<span="sub_title">Grid Container</span>
+						<p>
+						To make an HTML element behave as a grid container, you have to set the display property to grid or inline-grid.
+
+						Grid containers consist of grid items, placed inside columns and rows.
+						</p>
+					</div>
+					<div style="display:inline-block, width:40%;">	<span="sub_title">Grid Items</span>
+						<p>
+						To make an HTML element behave as a grid container, you have to set the display property to grid or inline-grid.
+
+						Grid containers consist of grid items, placed inside columns and rows.
+						</p>
+					</div>
+					
+				</div>
+		
+		  <footer></footer>
+	</body>
+</html>
