@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title>Flexbox</title>
+	<!-- 
+        <link rel="stylesheet" 
+              type="text/css" 
+              href="./style/main.css">
+               -->
+
+			<style>
+			/*	div {
+			              	
+			 	width:100px;
+			 	height:100px;
+			 	background_color:grey;
+			 	display:inline-block;
+			              		
+			              	}*/
+			.flex_container {
+				width: 70%x;
+				height:500px; 
+				margin:100px auto;
+				background-color: black;
+				display: flex;
+				flex-wrap:wrap;
+				justify-content:space-around;
+				/*
+				
+				align-content:space-around;
+				flex-flow:wrap row-reverse;
+				flex-direction:column;
+				
+				
+				justify-content:flex-end;
+				justify-content:center;
+				justify-content:flex-end;
+				align-items:flex-end;
+				align-items:stretch;
+				*/
+				
+			}
+			
+			.flex_item {
+				width:200px;
+				height: 100px;
+				background-color: beige;
+				text-align:center;
+				font-size:100px;
+				
+				
+				
+				/*flex-grow: 1;
+				flex-shrink:1;
+				flex-basis:200px;
+				justify-content:flex-end;*/	
+			}
+			
+			.flex_itemA {
+				background-color: pink;
+				
+			}
+			.flex_item_expanded{
+				background-color:bisque;
+				width:500px;
+			
+			}
+			
+			
+			.first-item{
+			
+				order:1;
+			
+			}
+			
+			.second-item{
+			
+				order:2;
+			
+			}
+			
+			.last-item{
+			
+				order:-1;
+			
+			}
+			</style>
+	</head>
+	<body>
+	<div class="flex_container">
+
+		<div class="flex_item  last-item ">
+			1
+		</div>
+		<div class="flex_item last-item ">
+			2
+		</div>
+		<div class="flex_item last-item ">
+			3
+		</div>
+		<div class="flex_item second-item ">
+			4
+		</div>
+		<div class="flex_item flex_item_expanded ">
+			5
+		</div>
+		<div class="flex_item second-item ">
+			6
+		</div>
+	
+		
+
+	</div>
+</body>
+</html>

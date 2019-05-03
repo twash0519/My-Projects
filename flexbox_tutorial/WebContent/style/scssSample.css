@@ -1,0 +1,13 @@
+/*# sourceMappingURL=scssSample.scss.map */
+
+/*# sourceMappingURL=scssSample.css.map */
+div {
+    background-color: beige;
+        p {
+
+          background-color: black;  
+          width: 50%;
+          height: 50%;
+        }
+
+}
