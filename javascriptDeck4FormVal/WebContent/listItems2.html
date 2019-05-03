@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+
+    </head>
+    <body>  
+        
+        
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+            <script>
+            //var li = document.getElementsByName('li');
+            var li = document.getElementsByTagName('li');
+            var myArr = Array.prototype.slice.call(li,1,3);
+            for(i in myArr){
+                console.log(myArr[i]);
+            }
+                //for (i in li) {console.log(items(li[i]));}
+            </script>
+</body>
+</html>
