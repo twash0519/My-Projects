@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="ISO-8859-1">
+        <title>Box</title>
+    </head>
+    <body>
+        <script>
+
+        var width= "";
+        var height="";
+
+        width=prompt("Enter a width:");
+        height=prompt("Enter a height");
+
+
+        
+         
+        for (var row=1;row<=height;row++) {
+        var boardLine= "";
+            for (var column=1;column<=Math.ceil(width/2);column++){
+                      
+                if (row%2==0){ 
+                    boardLine +="* "
+                } else
+                if (row%2==1) {
+                    boardLine += " *"
+                  
+                     
+                }
+            }
+            console.log(boardLine);
+            document.write('<br />');
+        }
+        </script>
+
+        
+    </body>
+</html>

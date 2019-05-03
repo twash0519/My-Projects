@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="ISO-8859-1">
+        <title>Box</title>
+    </head>
+    <body>
+        <script>
+        var width= "";
+        var height="";
+
+        width=prompt("Enter a width:");
+        height=prompt("Enter a height");
+        document.write('Shape:<br />');
+
+        for(var i=1; i<=height; i++){
+            var star ="";
+            for (var j=1; j<=width; j++)
+            {
+                star+="*";document.write('*');
+                document.write('*');//this prints out in html 
+            }
+
+            console.log(star);
+            document.write('<br />');
+        }
+        </script>
+
+        
+    </body>
+</html>
