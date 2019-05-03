@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="ISO-8859-1">
+    <title>Sum</title>
+    </head>
+    <body>
+        <script>
+            /*write a program that reads a sequence of integers from
+            the prompt methos and reports the sum.
+            */
+            var numbers=prompt("Please enter 5 numbers");
+            var numberArray=numbers.split(" ");//this creates an array
+            console.log('numberArray',numberArray);
+            
+           
+            var sum=0;
+            
+                for(var i=0; i<numberArray.length; i++){
+                
+                    sum += Number(numberArray[i]);
+             
+                    
+                }
+
+          
+          console.log(sum);
+            document.write(sum);
+            
+
+            
+        </script>
+    </body>
+</html>

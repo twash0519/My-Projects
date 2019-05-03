@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="ISO-8859-1">
+    <title>Calculator</title>
+    </head>
+    <body>
+        <script>
+            /*write a program that reads a sequence of integers from
+            the prompt methos and reports the sum.
+            */
+            
+            var formula=prompt("Please enter a mathematical formula");
+            
+            console.log(formula);
+           
+        
+            
+           
+            var sum=0;
+            
+                for(var i=0; i<formula.length; i++){
+                    
+                   
+                   //  console.log(formula[i]);
+                      
+                    
+                   var total = 0;
+                    if(formula[i] == "+"){
+                      //  console.log(formula[i]);
+                      console.log(formula[i-1]);
+                        console.log(formula[i+1]);
+                        
+                        total=Number((formula[i-1]))+Number((formula[i+1]));
+                        console.log(total);
+
+                    }else 
+                     
+
+                        if(formula[i] == "-"){
+                      //  console.log(formula[i]);
+                      console.log(formula[i-1]);
+                        console.log(formula[i+1]);
+                        
+                        total=Number((formula[i-1]))- Number((formula[i+1]));
+                        console.log(total);
+
+
+                    }
+
+                }
+
+                
+          
+                
+            
+
+            
+        </script>
+    </body>
+</html>
