@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="ISO-8859-1">
+        <title>Insert title here</title>
+        </head>
+    <body>
+        <script>
+            var Linkedlist = function(){
+            this.head= null;//this list is empty
+            this.size=0;
+            this.addToHead = function(v){
+            var node = new Node(v);
+            if(this.head===null){//if the list is empty
+                this.head = node;
+                this.size++;
+            
+            }else { //if the list contains one for more nodes
+                node.next = this.head;
+                this.head = node;
+                this.size++;
+            }
+            return;
+        }
+            this.addToSecond = function(v){
+            var node = new Node(v);
+            this.size++;
+            if(this.head === null) { // if the list is empty
+                this.head = node;
+            
+            
+        } else { //if the list containes one or more nodes
+            node.next=this.head.next;
+            this.head.next = node;
+        }
+    }
+}
+
+        var Node = function(v){
+            this.value = v;
+            this.next = null;
+        }
+
+        var booksNumber = new Linkedlist();
+            booksNumber.addToHead(10);
+            booksNumber.addToHead(20);
+            booksNumber.addToHead(30);
+            booksNumber.addToHead(40);
+
+            console.log(booksNumber);
+
+            
+        </script>
+
+    </body>
+</html>

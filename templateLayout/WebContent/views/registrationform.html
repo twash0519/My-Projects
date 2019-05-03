@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewpert" content="width=device-width, initial-scale=1">
+            <title>Registation</title>
+            <link rel="stylesheet"
+                  type="text/css" 
+                  href="../styles/main.css" >
+        </head>
+        <body>
+        <!-- Main Container-->
+            <!-- Main Navigation-->
+            <header>
+                    <nav>
+                        <div class="menu_container">
+                       
+                            <div class="menu_logo">
+                                <img src="../images/universal-orlando-resort-color-logo-b.webp" width=70 height=50>
+                            </div>
+                            <div class="menu_item">
+                                <ul>
+                                    <li>
+                                        <a href="../index.html">Home</a>
+                                         <div class="dropdown-content">
+                                            <a href="#">Link 1</a>
+                                            <a href="#">Link 2</a>
+                                            <a href="#">Link 3</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="about.html">About</a>
+                                         <div class="dropdown-content">
+                                            <a href="#">Link 1</a>
+                                            <a href="#">Link 2</a>
+                                            <a href="#">Link 3</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">Contact</a>
+                                         <div class="dropdown-content">
+                                            <a href="#">Link 1</a>
+                                            <a href="#">Link 2</a>
+                                            <a href="#">Link 3</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                                
+                            </div>
+
+                        </div>
+                        
+                    </nav>
+             </header>
+             <div class="main_wrapper">
+              <hr/>
+             <!--  Main Content  -->
+                <h1>Registation</h1>
+		<p><br>
+		<form>
+		<table>
+		<tr>
+			<td><label for="name">First Name</label></td>
+			<td><input id="name" type="text" name ="firstName"  placeholder="Enter Your First Name" required/><br /></td>
+		</tr>
+		<tr>
+			<td><label for="name">Last Name</label></td>
+			<td><input id="name" type="text" name ="lastName"  placeholder="Enter Your Last Name" required/><br /></td>
+		</tr>
+		<tr>
+			<td><label for="email">Email</label></td>
+			<td><input id="email" type="email" name ="email"  placeholder="Enter Your Email" /><br /></td>
+		</tr>
+		<tr>
+			<td><label for="pass">Password</label></td>
+			<td><input id="pass" type="password" name ="password"  placeholder="Enter Your Password"  disabled/><br /></td>
+		</tr>
+		<tr>
+			<td><label for="conpass">Confirm Password</label></td>
+			<td><input id="conpass" type="password" name ="conPass" placeholder="Confirm Your Password" /><br /></td>
+		</tr>
+		<tr>
+			<td><label for="gender">Gender</label></td>
+			<td><label for="female" >Female</label><input id="female" value="female" type="radio" name ="gender"  />
+				<label for="male" >Male</label><input id="male" value="male" type="radio" name ="gender"  /></td>
+		</tr>
+		
+		<tr>
+			<td><label for="dob" >Date of Birth</label></td>
+			<td><input id="date" type="date" min="2017-01-02" name="data"  /><br /></td>
+		</tr>	
+		<tr>
+			<td><label for="habits" >Habits</label></td>
+			<td>
+			<input id="habits" type="checkbox" name="habits" value="value1"   />You like sports
+			<input id="habits" type="checkbox" name="habits" value="value2"   />You like to eat
+			<input id="habits" type="checkbox" name="habits" value="value3"  />You Like to Sleep<br />
+			<input type="submit" name="sub" value ="Register" />
+			</td>
+		</tr>	
+		
+		
+		</table>
+		<table>
+		<tr>
+			<td><label for="name">Full Name</label></td>
+			<td><input id="name" type="text" name ="fulName" required/><br /></td>
+		</tr>
+		<tr>
+			<td><label for="email">Email</label></td>
+			<td><input id="email" type="email" name ="email"  /><br /></td>
+		</tr>
+		<tr>
+			<td><label for="pass">Password</label></td>
+			<td><input id="pass" type="password" name ="password"  disabled/><br /></td>
+		</tr>
+		<tr>
+			<td><label for="conpass">Confirm Password</label></td>
+			<td><input id="conpass" type="password" name ="conPass" /><br /></td>
+		</tr>
+		<tr>
+			<td><label for="femlae" >Female</label><input id="female" type="radio" name ="gender"  /></td>
+		<td><label for="male" >Male</label><input id="male" type="radio" name ="gender"  /></td>
+		</tr>
+		<tr>
+			<td><label for="quant" >Quantity</label></td>
+			<td><input id="quant" type="number" name ="ocena" value=0" min="1" max="6" /><br /></td>
+		</tr>
+		<tr>
+			<td><label for="dob" >DOB</label></td>
+			<td><input id="date" type="date" min="2017-01-02" name="data"  /><br /></td>
+		</tr>	
+		<tr>
+			<td><label for="hour" >Hour</label></td>
+			<td><input id="hour" type="time" name="dontknow"  /><br /></td>
+		</tr>	
+		<tr>
+			<td><label for="c" >Favorite Color</label></td>
+			<td><input id="c" type="color" name="ulobinoly color" value="#ff00AA" /><br />
+			<input type="submit" name="sub" value ="Save" /></td>
+		</tr>
+			
+		</table>	
+		<table>
+		
+			<label for="message">Tell me everything</label></br>
+			<textarea cols="50" rows="10"></textarea> <br />
+			
+			<label for="cars" >Cars</label>&nbsp;
+			<input list="cars" />
+			<datalist id="cars" />
+				<option value="BMW" />	
+				<option value="Ford" />
+				<option value="Volvo" />
+				<option value="Skoda" />
+				<option value="Toyota" />
+			</datalist></br>
+			
+			<label for="country" >Country</label>&nbsp;
+			<select name="country" id="country" multiple="multiple">
+				<optgroup label="Europe">
+					<option value="UK">UK</option>option>
+					<a href="about.html"><option value="Germany">Germany</option></a>
+					<option value="France">France</option>option>
+				</optgroup>
+				
+				<optgroup label="North America">
+					<option value="USA">USA</option>option>
+					<option value="Canada">Canada</option>option>
+				</optgroup>
+			</select> 
+			
+			
+			<input type="submit" name="sub" value ="Save" />
+			</table>	
+		</form>
+                
+             <!--footer--> 
+            <footer style="clear:both;">
+                <p>
+                    Universal Trip, &copy; 2019 Last Updated: 02/17/2019<br>
+                    <a href="#top">Top</a>
+                </p>
+            </footer>
+
+        </body>
+        
+    </html>

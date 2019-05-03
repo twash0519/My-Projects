@@ -1,0 +1,39 @@
+
+<html>   
+<head></head>
+<body>
+  <img id = "myImage" src = "http://www.clker.com/cliparts/z/k/A/t/x/c/rocket-ship-hi.png" heigth= "100px" width = "100px"/>           
+  <div style="text-align:center;width:480px;">
+  <button id= 'KeyA'>UP</button><br><br><button id= 'KeyW'>LEFT</button>
+  <button id = 'KeyD'>RIGHT</button><br><br><button id= 'KeyS'>DOWN</button>
+ 
+  <br><br>
+  <button type="button" onclick="closeWindow()">CLOSE</button>
+</div>          
+</body> 
+  <script>
+   var animate;
+   const buttons = document.querySelectorAll('button');
+   for(var i=0; i< buttons.length;i++){
+     buttons[i].addEventListener('mouseenter', function() {changeToCoral(event.target);});
+     buttons[i].addEventListener('click',function() {moveImage(event.target.id);});
+     
+     
+     document.addEventListener('mouseup',function() {	});}
+   function moveImage(direction) {
+      if(direction==='KeyD'){imgObj.style.left = parseInt(imgObj.style.left) + 1 + 'px';};
+      if(direction==='KeyW'){imgObj.style.left = parseInt(imgObj.style.left) - 1 + 'px';};
+      if(direction==='KeyA'){imgObj.style.top = parseInt(imgObj.style.top) - 1 + 'px';};
+      if(direction==='KeyS'){imgObj.style.top = parseInt(imgObj.style.top) + 1 + 'px';}
+      animate = setTimeout(function(){moveImage(direction)},20);
+      };      
+      function init() {
+      imgObj = document.getElementById('myImage');
+      imgObj.style.position= 'relative';  
+      imgObj.style.left = '0px'; imgObj.style.top = '0px';};
+      window.onload = init;
+      console.log("hello");
+  
+   </script>
+   
+</html>

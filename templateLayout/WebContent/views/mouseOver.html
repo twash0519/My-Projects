@@ -1,0 +1,29 @@
+
+
+<!DOCTYPE html>
+<html lang="en-US">
+ <head>
+  </head>
+  <body>
+ <div style="text-align:center;width:280px;">
+  <div id= 'KeyA'>UP</button><br><br>
+  <div id= 'KeyW'>LEFT</div>
+  <div id = 'KeyD'>RIGHT</div><br><br>
+  <div id= 'KeyS'>DOWN</div>
+ </div>
+   <script>
+   const buttons = document.querySelectorAll('div');
+   for(var i=0; i< buttons.length;i++){
+        buttons[i].addEventListener('mouseenter', function() {
+        console.log(event.target);
+        changeToCoral(event.target);
+        });
+       buttons[i].addEventListener('mouseleave', function() {
+         backToNormal(event.target);
+       });
+    }
+    function changeToCoral(eventTarget){eventTarget.style.backgroundColor= 'coral';}
+    function backToNormal(eventTarget){ eventTarget.style.backgroundColor= '';}
+   </script>
+  </body>
+</html>

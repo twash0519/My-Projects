@@ -1,0 +1,148 @@
+
+		
+		#mainContainer {
+			width:700px; 
+			background-color:#333333; 
+			padding: 10px;
+			margin-left: auto;
+    		margin-right: auto;
+    		color:#999999;
+            font: 12px arial, sans-serif;	
+          /*  color: #990033 wine
+          #d9d9d9  grey
+          #000099 blue
+          #cc0066 fuscia
+          #3366cc  sky blue*/
+		}
+		
+		
+		
+		#title {
+		padding-left:5px; 
+		padding:top:0px; 
+		display:inline-block; 
+		border-top:0px;
+	
+		}
+		
+		
+		#sideBarContainer {
+			float:right; 
+			width:30%; 
+			 
+		}
+		
+		.mainContent {
+			font-weight: normal;
+			font: 12px arial, sans-serif;
+			color:#999999;
+		}
+		
+		.header	{
+			border: 0px;
+			padding: 0px;
+			font-weight: bold;
+			font-family:"Arial Black", Gadget, sans-serif;
+			font: 12px;
+			color:white;
+			background:#666666;
+		}
+		
+		
+		
+		.sideBarContent {
+			color:white;
+			font: 12px arial, sans-serif;
+			color:#999999;
+		}
+		
+		
+		.sideBarHeader	{
+			border: 0px;
+			padding: 0px;
+			font-weight: bold;
+			font: 12px arial, sans-serif;;
+			color:white;
+			
+			
+		}
+		
+		
+		.subHeader {
+			font-weight: bold;
+			font: 12px arial, sans-serif;
+			color:white;
+		}
+		
+		.subText {
+			font-weight: normal;
+			font: 10px arial, sans-serif;
+			color:#999999;
+		}
+		
+
+		
+		hr {
+    		border: 0;
+	    	height: 1px;
+	    	background:#404040;
+		}
+		
+		progress:before {
+			display-inline;
+			content: attr(value) "%";
+			width: 150px;
+ 			height: 8px;
+ 			color:white;
+ 			
+		}
+		
+		.dot {
+			  height: 15px;
+			  width: 15px;
+			  
+			  border-radius: 50%;
+			  display: inline-block;
+		}
+		
+		a:link {
+  			color: aqua;
+			}
+			
+		.date {
+			float:right;
+		}	
+		
+		i {
+			  border: solid white;
+			  border-width: 0 5px 5px 0;
+			  display: inline-block;
+			  padding: 3px;
+			  
+			}
+			
+		 e	{
+			  border: solid white;
+			  border-width: 0 2px 2px 0;
+			  display: inline-block;
+			  padding: 3px;
+			  
+			}
+		
+		.down {
+			  transform: rotate(45deg);
+			  -webkit-transform: rotate(45deg);
+			  
+			}
+		
+			
+		.arrowDownBackgroundBlue{	
+			background:#00ccff; width:100px;
+		}	
+			.right {
+			  transform: rotate(-45deg);
+			  -webkit-transform: rotate(-45deg);
+			}
+		</style>
+		
+	
