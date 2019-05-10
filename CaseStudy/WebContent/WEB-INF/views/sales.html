@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Sales</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> 
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<style>
+	html,body{
+	background: #fff;
+
+	}
+	 #form{
+                    width:65%;
+                    display:flex;
+                    justify-content: center;
+                    align-items: center;
+                    justify-content: space-around;
+                    flex-wrap:wrap;
+                    padding: 4px;
+                    align:center;
+                    
+                    
+                    color:black;
+                    background: #fff;
+                   
+                   /* border-radius:4%; */
+                    
+                }
+                #email {
+                    width:100%;
+                    padding: 4px;
+                    margin:0px;
+                   
+                    <!--   background:#660033;-->
+                
+                }
+                  #password {
+                    width:100%;
+                    padding: 4px;
+                    margin:0px;
+                   <!-- background:#660033;-->
+                
+                }
+                
+                
+               button {
+                   width:10%; 
+                   margin:0px;
+                   background-color:#00838f; 
+                   color:#fff
+                   
+                
+                }
+                
+               button:hover  {
+  					background-color: #22a8b5; 
+					  color: white;
+					}
+                
+                li:hover{
+                	background-color: #22a8b5;
+                }
+                #applyButton{
+                    width:100%;
+                    padding-top: 4px;
+                    margin-top:8px;
+                   <!-- background:#660033;-->
+                
+                }
+                
+                .container-fluid	{
+                background:#00838f;
+                color:#fff;
+                }
+                
+                h2{
+                padding:20px;
+                color:#00838f;
+                align:center:
+                }
+                
+                .navbar-brand {
+                color:#fff;
+                }
+   
+	</style>
+</head>
+<body>
+<!-- Navigation -->
+	<nav class="navbar navbar-inverse">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="#" style="color:#fff;">i.e.Spa-Indulgences</a>
+	    </div>
+	    <ul class="nav navbar-nav">
+	      <li ><a href="#" style="color:#fff;">Home</a></li>
+	      <li  style="color:#fff; background:#000;"><a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:#fff;">Sales</a>
+	       
+	      </li>
+	      <li  style="color:#fff; "><a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:#fff;">POS <span class="caret"></span></a>
+	        <ul class="dropdown-menu">
+	         <li><a href="#">Online</a></li>
+	          <li><a href="#">Vendors</a></li>
+	          
+	        </ul>
+	      </li>
+	      <li  style="color:#fff;"><a href="#" style="color:#fff;hover:#22a8b5;">Products</a></li>
+	    </ul>
+	    <ul class="nav navbar-nav navbar-right">
+	      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+	      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+	    </ul>
+	  </div>
+	</nav>
+  
+ 
+ <!-- End Navigation -->
+ <!-- Main Body -->
+ <h2>List All Sales</h2>
+ <p><br>
+ <div align="center">
+ <h3>Search here!</h3>
+ 	<form> Select a Month
+ 		<select><form:select path="date"  >
+ 			<form:option value="01" label="January"/>
+ 			<form:option value="02" label="February"/>
+ 			<form:option value="03" label="March"/>
+ 			<form:option value="04" label="April"/>
+ 			<form:option value="05" label="May"/>
+ 			<form:option value="06" label="June"/>
+ 			<form:option value="07" label="July"/>
+ 			<form:option value="08" label="August"/>
+ 			<form:option value="09" label="September"/>
+ 			<form:option value="10" label="October"/>
+ 			<form:option value="11" label="November"/>
+ 			<form:option value="12" label="December"/>
+ 		</select>
+ 	</form>
+ 	<p><br>
+	<form action="search" method="post">
+		<input type="text" name="orderDate" placeholder="Order Date">&nbsp;
+		<input type="text" name="shippedDate" placeholder="Shipped Date">&nbsp;
+		<input type="text" name="pointOfSale" placeholder="Point of Sales">&nbsp;
+		<button >Search</button><img src="../images/glyphicons-halflings-12-search@2x.png">
+	</form>
+	 
+	<h4>${noRecord}</h4>
+	<h4>${recordFound}</h4>
+	<h4>${allApplications}</h1>
+ </div>	
+ <table align="center" style="width:80%" class="table table-hover table-dark">
+  <thead>
+    <tr style="background:#000; color:#fff">
+      <th scope="col" >ID</th>
+      <th scope="col">First Name</th>
+      <th scope="col">Last Name</th>
+      <th scope="col">Address</th>
+      <th scope="col">Order</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>222 Street</td>
+      <td>candle</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>222 Street</td>
+      <td>candle</td>
+    </tr>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>Bird</td>
+      <td>222 Street</td>
+      <td>candle</td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td >David</td>
+      <td >Wilson</td>
+      <td>222 Street</td>
+      <td>candle</td>
+    </tr>
+    <tr>
+      <th scope="row">5</th>
+      <td >Maria </td>
+      <td >Brown </td>
+      <td>222 Street</td>
+      <td>candle</td>
+    </tr>
+    <tr>
+      <th scope="row">6</th>
+      <td >Lawrence</td>
+      <td >White</td>
+      <td>222 Street</td>
+      <td>candle</td>
+    </tr>
+  </tbody>
+</table>
+<!-- Footer -->
+<footer class="page-footer font-small blue">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2018 Copyright:
+    <a href="https://mdbootstrap.com/education/bootstrap/" style="color:#00838f"> iespaindulgences.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+</body>
+</html>
