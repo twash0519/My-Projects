@@ -10,14 +10,14 @@
   },
 "profile2": {
     "name": "Melissa Brown",
-    "email": "melissa@myahoo.com"
+    "email": "melissa@myahoo.com",
     "product_name": "Energizing Bath Bomb",
     "quantity": "1",
     "location": "Twin Pines"
   },
   "profile3": {
     "name": "Melissa Brown",
-    "email": "melissa@myahoo.com"
+    "email": "melissa@myahoo.com",
     "product_name": "Nourishing Body Butter",
     "quantity": "3",
     "location": "Twin Pines"
