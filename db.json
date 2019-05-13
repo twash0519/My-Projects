@@ -1,8 +1,10 @@
 {
 
   "profile": {
-    "name": "typicode",
-    "email": "est@test.com"
+     "id": 1,
+    "name": "Leanne Graham",
+    "username": "Bret",
+    "email": "Sincere@april.biz"
   },
 
   "profile": {
