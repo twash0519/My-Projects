@@ -14,5 +14,12 @@
     "product_name": "Nourishing Body Butter",
     "quantity": "1",
     "location": "Twin Pines"
+  },
+   "profile3": {
+    "name": "Meliss Brown",
+    "email": "melissa@yahoo.com",
+    "product_name": "Balancing Dead Sea Salt Scrub",
+    "quantity": "3",
+    "location": "Twin Pines"
   }
 }
