@@ -3,7 +3,8 @@
   "profile2": {
     "name": "Leanne Graham",
     "email": "Sincere@april.biz",
-     "username": "Antonette",
+    "product_name": "Soothing Body Scrub",
+    "quantity": "2",
     "location": "Fairview"
     
   },
