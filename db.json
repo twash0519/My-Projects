@@ -4,10 +4,8 @@
     "name": "Leanne Graham",
     "email": "Sincere@april.biz"
   },
-
-  
-    "name": "Maria",
-     "username": "Bret",
-    "email": "est@test.com"
+"profile": {
+    "name": "typicode"
+  }
   
 }
