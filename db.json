@@ -1,14 +1,13 @@
 {
 
   "profile": {
-     "id": 1,
     "name": "Leanne Graham",
-    "username": "Bret",
     "email": "Sincere@april.biz"
   },
 
   "profile": {
     "name": "Maria",
+     "username": "Bret",
     "email": "est@test.com"
   }
 }
