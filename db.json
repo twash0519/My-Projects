@@ -1,6 +1,6 @@
 {
 
-  "profile1": {
+  "profile": {
     "name": "Leanne Graham",
     "email": "Sincere@april.biz",
     "product_name": "Soothing Body Scrub",
@@ -8,19 +8,13 @@
     "location": "Fairview"
     
   },
-"profile2": {
+"profile1": {
     "name": "Melissa Brown",
     "email": "melissa@myahoo.com",
     "product_name": "Energizing Bath Bomb",
     "quantity": "1",
     "location": "Twin Pines"
-  },
-  "profile3": {
-    "name": "Melissa Brown",
-    "email": "melissa@myahoo.com",
-    "product_name": "Nourishing Body Butter",
-    "quantity": "3",
-    "location": "Twin Pines"
-  },
+  }
+ 
   
 }
