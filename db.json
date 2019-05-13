@@ -26,6 +26,7 @@
     }
   ],
   "profile": {
-    "name": "typicode"
+    "name": "typicode",
+    "email": "est@test.com"
   }
 }
