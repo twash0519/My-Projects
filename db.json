@@ -21,5 +21,12 @@
     "product_name": "Balancing Dead Sea Salt Scrub",
     "quantity": "3",
     "location": "Twin Pines"
+  },
+   "profile4": {
+    "name": "Alicia Wilson",
+    "email": "awilson@googl.com",
+    "product_name": "Calming Deoderant",
+    "quantity": "2",
+    "location": "Evergreen"
   }
 }
