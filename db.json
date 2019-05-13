@@ -7,7 +7,12 @@
     "quantity": "2",
     "location": "Fairview"
     
+  },
+  "profile1": {
+    "name": "Leanne Graham",
+    "email": "Sincere@april.biz",
+    "product_name": "Soothing Body Scrub",
+    "quantity": "2",
+    "location": "Fairview"
   }
- 
-  
 }
